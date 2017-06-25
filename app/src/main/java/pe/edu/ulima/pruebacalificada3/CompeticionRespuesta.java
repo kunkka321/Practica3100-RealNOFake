@@ -7,13 +7,16 @@ import java.util.List;
 
 public class CompeticionRespuesta {
 
-    private List<List<String>> result;
+    private List<Competencia> competencias;
 
-    public List<List<String>> getResult() {
-        return result;
+    public CompeticionRespuesta() {
     }
 
-    public void setResult(List<List<String>> result) {
-        this.result = result;
+    public List<Competencia> getCompetencias() {
+        return competencias;
+    }
+
+    public void setCompetencias(List<Competencia> competencias) {
+        this.competencias = competencias;
     }
 }

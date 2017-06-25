@@ -19,14 +19,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_competicion);
 
-
-
-
         lviCompeticion = (ListView) findViewById(R.id.lviCompeticion);
-        CompeticionManager manager = new CompeticionManager();
-        manager.obtenerCompeticion(this);
-
-
+        new CompeticionManager().obtenerCompeticion(this);
     }
 
 

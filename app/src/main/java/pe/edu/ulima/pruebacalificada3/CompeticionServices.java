@@ -11,5 +11,5 @@ import retrofit2.http.GET;
 
 public interface CompeticionServices {
     @GET("/v1/competitions/?season=2016")
-    Call<CompeticionRespuesta> obtenerCompeticion();
+    Call<List<Competencia>> obtenerCompeticion();
 }
